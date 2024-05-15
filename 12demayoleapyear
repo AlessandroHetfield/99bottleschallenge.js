@@ -1,0 +1,18 @@
+var year= 1900;
+
+if (year % 4=== 0 && year % 100 != 0  ) || (year % 400 === 0 ) {
+    console.log(`This year ${year} is a lap year`);
+}
+
+else {
+    console.log(`This year ${year} is NOT a lap year`);
+}
+function esBisiesto(año) {
+    return (año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0);
+}
+
+// Ejemplo de uso
+console.log(esBisiesto(2000)); // true
+console.log(esBisiesto(2004)); // true
+console.log(esBisiesto(1900)); // false
+console.log(esBisiesto(2021)); // false
